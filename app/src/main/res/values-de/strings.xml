@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Android OBD Example App</string>
+    <string name="action">"Aktion: "</string>
+    <string name="get_errors">Hole Fehlercodes</string>
+    <string name="obd_connection">"OBD Verbindung: "</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="translator">"Übersetzer: "</string>
+    <string name="hella_obd_api">Car Diagnostic API</string>
+    <string name="german">Deutsch</string>
+    <string name="english">Englisch</string>
+    <string name="vin">VIN: </string>
+    <string name="vin_hint">WBAES26C05D</string>
+    <string name="get_results">Hole Ergebnisse</string>
+    <string name="error_server">Ein Server-Fehler ist aufgetreten.</string>
+    <string name="translation_result">Übersetzungsergebnisse:</string>
+    <string name="text_bluetooth_nodevice">Es wurde kein Bluetooth-Gerät ausgewählt</string>
+    <string name="text_bluetooth_disabled">Ihr Bluetooth ist ausgeschaltet. Schalten Sie es bitte ein (unter Nutzung des Mock Services).</string>
+    <string name="text_no_bluetooth_id">Entschuldigen Sie, aber Ihr Gerät unterstützt kein Bluetooth</string>
+    <string name="text_dtc_no_data">Keine DTCs vorhanden</string>
+    <string name="text_noerrors">Es wurden keine Fehlercodes gefunden!</string>
+    <string name="text_obd_command_failure">OBD Kommando Fehler!</string>
+    <string name="text_bluetooth_error_connecting">Kann keine Verbindung zum Bluetooth-Gerät aufbauen!</string>
+    <string name="choice_device">Wähle ein Gerät</string>
+    <string name="choice_language">Wähle eine Sprache</string>
+    <string name="fault">Fehler</string>
+    <string name="system">System</string>
+</resources>
