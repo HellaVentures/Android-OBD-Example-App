@@ -1,22 +1,28 @@
-# Android-OBD-Example-App
+<h1> Android-OBD-Example-App </h1>
 
+
+<h4> Content </h4>
+<ol>
+<li> <a href="#overview">Overview</a> </li>
+<li> <a href="#features">Features</a> </li>
+<li> <a href="#usage">Usage</a> </li>
+    <ol>
+    <li> <a href="#gettingStarted">Getting started</a> </li>
+    <li> <a href="#errorHandling">Error Handling</a> </li>
+    </ol>
+<li> <a href="#development">Development</a> </li>
+    <ol>
+    <li> <a href="#hardware">Hardware</a> </li>
+    <li> <a href="#dependencies">Dependencies</a> </li>
+    <li> <a href="#expansion">Project Expansion</a> </li>
+    <li> <a href="#structure">Project Structure</a> </li>
+    </ol>
+<li> <a href="#feedback">Feedback</a> </li>
+</ol>
 ***
-## Content
-1. [Overview] (#overview)
-2. [Features] (#features)
-3. [Usage] (#usage)
-    1. [Getting started] (#gettingStarted)
-    2. [Error Handling] (#errorHandling)
-4. [Development] (#development)
-    1. [Hardware] (#hardware)
-    2. [Dependencies] (#dependencies)
-    3. [Project Expansion] (#expansion)
-    4. [Project Structure] (#structure)
-5. [Feedback] (#feedback)
 
-***
 
-## 1. Overview <a name="overview"/>
+<h2> <a id="overview" href="#overview">1 Overview</a> </h2>
 This App can be used as a boilerplate for reading Diagnostic Trouble Codes
 (DTCs) from the OBD2 port of a car via Bluetooth. These trouble codes can be
 translated with the <a
@@ -29,7 +35,8 @@ App.<br/>
 
 Note: This App's OBD communication is based on the [Android OBD-II Reader application](https://github.com/pires/android-obd-reader) by pires but was strongly adapted to fit the needed requirements.
 
-## 2. Features <a name="features"/>
+
+<h2> <a id="features" href="#features">2 Features</a> </h2>
 
 Android's Bluetooth features are used to receive the DTCs and the HTTP library Volley for the API connection.
 The App provides the following main features:
@@ -38,9 +45,10 @@ The App provides the following main features:
 - API communication (Volley).
 
 
-## 3. Usage <a name="usage"/>
+<h2> <a id="usage" href="#usage">3 Usage</a> </h2>
 
-#### 3.1 Getting started: <a name="gettingStarted"/>
+
+<h4> <a id="gettingStarted" href="#gettingStarted">3.1 Getting started: </a></h4>
 
  0. If you want to use our API for translating error codes, follow
     the
@@ -76,7 +84,7 @@ The App provides the following main features:
 
  11. The results will be displayed, after they have been received and translated.
  
-#### 3.2 Error Handling: <a name="errorHandling"/>
+ <h4> <a id="errorHandling" href="errorHandling">3.2 Error Handling:</a> </h4>
  
  - __OBD Command Failure__: Appears from time to time while using the ISO9141-2 protocol.
     Just try again until it works.
@@ -86,9 +94,9 @@ The App provides the following main features:
    Check the dongle and your chosen device again.
 
 
-## 4. Development <a name="development"/>
+<h2> <a id="development" href="#development">4 Development</a> </h2>
 
-#### 4.1 Hardware: <a name="hardware"/>
+<h4> <a id="hardware" href="#hardware">4.1 Hardware:</a> </h4>
 You need the following hardware in combination with this app:
 
 - a vehicle with OBD2 port <br/> or a simulator,
@@ -118,13 +126,13 @@ You need the following hardware in combination with this app:
 Our test environment included: Diamex OBD2 Profi Simulator, BerryKing Autoscan 2016 and LG-H320 with Android 5.0.1 installed.
 
 
-#### 4.2 Dependencies: <a name="dependencies"/>
+<h4> <a id="dependencies" href="#dependencies">4.2 Dependencies:</a> </h4>
 The app has the following dependencies:
 - **[Android Volley](https://developer.android.com/training/volley/index.html)**: HTTP library for networking in Android apps
 - **[obd-java-api](https://github.com/pires/obd-java-api)**: OBD java api for OBD2 communications
 
 
-#### 4.3 Project expansion: <a name="expansion"/>
+<h4> <a id="expansion" href="#expansions">4.3 Project expansion:</a> </h4>
 - Click the "Clone or download" button and then "Download ZIP". Unzip the project. In Android Studio do the follwoing steps:  
      **File -> New -> Import Project... -> _Select the unzipped folder_ -> OK**
 
@@ -133,7 +141,7 @@ The app has the following dependencies:
 - Adapt the project to your needs.
  
 
-#### 4.4 Project structure: <a name="structure"/>
+<h4> <a id="structure" href="#structure">4.4 Project structure:</a> </h4>
 The project is structured in three main packages: [ui](app/src/main/java/veronika/hella/obdapp/ui), [obd](app/src/main/java/veronika/hella/obdapp/obd) and [api](app/src/main/java/veronika/hella/obdapp/api)
 
 The **ui package** contains the classes for the user interactions:
@@ -168,7 +176,7 @@ Generates URLs and uses them to make a HTTP GET request using the Volley library
 Uses client id and secret as API's authentication paramters .
 
 
-## 5. Feedback <a name="feedback"/>
+<h2> <a id="feedback" href="#feedback">5 Feedback</a> </h2>
 
 If you want to file a bug report or make a feature request for this App, please
 use the issues section of this repo.
